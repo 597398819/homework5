@@ -132,14 +132,20 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
-<body>
+
+	
+	<body>
   <div id="wrapper">
     <!-- H1, HERO-IMG, SUB-HEAD AND BODYTEXT IN DEUTSCH -->
     <h1>EDUCATION IN HK </h1>
     <img src="//c1.staticflickr.com/1/329/32483102405_38aec28cdd_h.jpg" alt="Landscape view of the Hochschule für Gestaltung, Ulm" />
     <div class="subhead subhead-de">
       <p>While there are nine years of compulsory schooling in Hong Kong, six in primary school and three in junior secondary school, the Hong Kong government has made it easier, and therefore more likely, that the majority of students will receive 12 years of education.</p>
-   <div id="main3" style="width:600px;height:400px;"></div>
+    <div class="bodytext bodytext-de">
+      <p>We did a simply research to find out the general situation of education in HK.</p>
+      
+    </div>
+	    <div id="main3" style="width:600px;height:400px;"></div>
     <script type="text/javascript">
             
 
@@ -192,38 +198,146 @@ var myChart1 = echarts.init(document.getElementById('main3'));
                     });
                 });
             </script>
-    </div>
-    <div class="bodytext bodytext-de">
-      <p>We did a simply research to find out the general situation of education in HK.</p>
-      <p>There are two tables provided by data.gov.hk</p>
-      <p>Table one is distribution of educational attainment of population aged 15 and over in 2014 while table two is information for 2015.</p>
 
-    </div>
+	    <p> Table two</p>
+	       <div id="main4" style="width:600px;height:400px;"></div>
+    <script type="text/javascript">
+            
+
+
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['Primary and below','Secondary','Diploma/Certificate course','Sub-degree course','Degree course']
+    },
+    series: [
+        {
+            name:'Educational attainmen',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:19.1, name:'Primary and below'},
+                {value:50.4, name:'Secondary'},
+                {value:2.7, name:'Diploma/Certificate course'},
+                {value:4.8, name:'Sub-degree course'},
+                {value:22.9, name:'Degree course'}
+            ]
+        }
+    ]
+};
+var myChart1 = echarts.init(document.getElementById('main4'));
+                        myChart1.setOption(option);
+                    });
+                });
+            </script>
+
+  
     <!-- SUB-HEAD AND BODYTEXT IN ENGLISH -->
   
      
 
     <div class="bodytext bodytext-en">
-      <p>The Hochschule für Gestaltung educates specialists for two different tasks of our technical civilization: The design of industrial products (industrial design department and building department); The design of visual and verbal means of communication
-        (visual communication department and information department).</p>
-      <p>The school thus educates designers for the production and consumer goods industries as well as for present-day means of communication: press, films, broadcasting, television, and advertising. These designers must have at their disposal the technological
-        and scientific knowledge necessary for collaboration in industry today. At the same time they must grasp and bear in mind the cultural and sociological consequences of their work.</p>
-      <p>The Hochschule für Gestaltung is conceived as a school for maximum number of 150 students, in order to ensure a favourable proportion between the number of students and faculty. Faculty and students come from many different countries, thus giving
-        the school an international character.</p>
-    </div>
-    <!-- SUB-HEAD AND BODYTEXT IN FRENCH -->
-    <div class="subhead subhead-fr">
-      <p>Bulletin trimestriel<br/>de la Hochschule für Gestaltung, Ulm<br/>Octobre 1958</p>
-      <p>Prix du numéro 125 frs / L 175<br/>Abonnement annuel 500 frs / L700 port payé</p>
-    </div>
-    <div class="bodytext bodytext-fr">
-      <p>La Hochschule für Gestaltung s'attache à former des specialists appelés à remplir deux tâches d'importance decisive dans notre civilisation technique: la creation dans le domaine des produits industriels (section Industrial Design et section Industrialistion
-        du Bâtiment); la creation dans le domaine de la communication visuelle et verbale (section Communication Visuelle et section Information).</p>
-      <p>La Hochschule für Gestaltungforme dês créateurs qui s'appliquent tant à l'étude d'objets industriels de consommation ET de production, qu'à celle des moyens moderns de communication (presse, film, radiodiffusion, television, publicité). Ces créateurs
-        devront posséder les connaissances techniques et théoriques aujourd'hui nécessaries à une collaboration fructueuse avec l'industrie. Ils devront aussi considerer et mesurer la portée des consequences sociales et culturelles de leur travail.</p>
-      <p>La Hochschule für Gestaltung est conçue de manière à recevoir un maximum de 150 étudiants, afin d'assurer une proportion numérique favorable aux rapports entre étudiants et professeurs, qui viennent de tous les horizons et donnent "a l'Escole son
-        caractère international.</p>
-    </div>
+      <p>There are another table:Government Expenditure on Education</p>
   </div>
+	    	       <div id="main5" style="width:600px;height:400px;"></div>
+    <script type="text/javascript">
+            
+
+option = {
+    title: {
+        text: 'Government Expenditure on Education'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['Total expenditure on education (HK$ million)','As percentage of total government expenditure (%)','As percentage of Gross Domestic Product (GDP) (%)','Recurrent expenditure on education (HK$ million)']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2010-11','2013-14','2015-2016']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'Total expenditure on education (HK$ million)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[60719, 73724, 79122]
+        },
+        {
+            name:'As percentage of total government expenditure (%)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[20.1, 18.6, 18.5]
+        },
+        {
+            name:'As percentage of Gross Domestic Product (GDP) (%)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[3.4, 3.3, 3.3]
+        },
+        {
+            name:'Recurrent expenditure on education (HK$ million)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[51034, 67803, 72453]
+        },
+       
+          
+    ]
+};
+
+var myChart1 = echarts.init(document.getElementById('main5'));
+                        myChart1.setOption(option);
+                    });
+                });
+            </script>
 </body>
 </body></html>
