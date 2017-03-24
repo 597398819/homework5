@@ -34,19 +34,15 @@
 		width:100%;
 		max-height:100%;
 		}
-
-
 	/* SUB-HEAD STYLES */
 	.subhead-de, .subhead-en, .subhead-fr{
     margin-top:2rem;
 		}
-
   .subhead p{
     font-weight:700;
     }
 		
 		
-
 	/* DESKTOP STYLES - MEDIA QUERIES (1250px) */
 	
 	@media (min-width:1270px){
@@ -104,7 +100,6 @@
 			grid-row:2 / 3;
 			}
 		
-
 		/* BODYTEXT STYLES */
 		.bodytext-de, .bodytext-en, .bodytext-fr{
 			margin-top:1rem;
@@ -125,9 +120,6 @@
 			grid-row:4 / 5;
 			}	
 		}
-
-
-
 	/* DESKTOP STYLES - MEDIA QUERIES (1450px) */
 	
 	@media (min-width:1480px){
@@ -140,31 +132,77 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
-
 <body>
   <div id="wrapper">
     <!-- H1, HERO-IMG, SUB-HEAD AND BODYTEXT IN DEUTSCH -->
-    <h1>ulm 1</h1>
+    <h1>EDUCATION IN HK </h1>
     <img src="//c1.staticflickr.com/1/329/32483102405_38aec28cdd_h.jpg" alt="Landscape view of the Hochschule für Gestaltung, Ulm" />
     <div class="subhead subhead-de">
-      <p>Vierteljahresbericht<br/>der Hochschule für Gestaltung, Ulm<br/>Oktober 1958</p>
-      <p>Preis pro Nummer DM 1.― / SFr 1.― / OS 7.50<br/>Jahresabonnement DM 4.― / SFr 4.― / OS 30<br/>portofrei</p>
+      <p>While there are nine years of compulsory schooling in Hong Kong, six in primary school and three in junior secondary school, the Hong Kong government has made it easier, and therefore more likely, that the majority of students will receive 12 years of education.</p>
+    <script type="text/javascript">
+                // Initialse eCharts
+                $(function() {
+             app.title = '环形图';
+
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['Primary and below','Secondary','Diploma/Certificate course','Sub-degree course','Degree course']
+    },
+    series: [
+        {
+            name:'Educational attainmen',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:19.6, name:'Primary and below'},
+                {value:50.5, name:'Secondary'},
+                {value:3.2, name:'Diploma/Certificate course'},
+                {value:4.6, name:'Sub-degree course'},
+                {value:22, name:'Degree course'}
+            ]
+        }
+    ]
+};var myChart1 = echarts.init(document.getElementById('hkdce-camp-evolution'));
+                        myChart1.setOption(option);
+                    });
+                });
+            </script>
     </div>
     <div class="bodytext bodytext-de">
-      <p>Die Hochschule für Gestaltung bildet Frachkräfte aus für zwei entscheidende Aufgaben der technischen Zivilisation: die Gestaltung industrieller Produkte (Abteilung Produktform und Abteilung Bauen); die Gestaltung bildhafter und sprachlicher Mitteilungen
-        (Abteilung visuelle Kommunikation und Abteilung Information).</p>
-      <p>Die Hochschule für Gestaltung bildet damit Gestalter heran für die Gebrauchs- und Produktionsgüterindustrie sowie für die modernen Kommunikationsmittel Presse, Film, Funk und Werbung. Diese Gestalter müssen über die technologischen und wissenschaftlichen
-        Fachkenntniesse verfügen, die für eine Mitwirkung in der heutigen Industrie erforderlich sind. Gleischzeitig müssen sie die kulturellen und gesellschaftlichen Konsequenzen ihrer Arbeit erfassen und berücksichtigen.</p>
-      <p>Die Hochschule für Gestaltung ist als eine Schule für höchstens 150 Studierende konzipiert, um ein günstiges Zahlenverhältnis zwischen Studierenden und Dozenten zu gewährleisten.</p>
-      <p>Dozenten und Studierende kommen aus verschiedenen Ländern und geben der Hochschule einen internationalen Charakter.</p>
+      <p>We did a simply research to find out the general situation of education in HK.</p>
+      <p>There are two tables provided by data.gov.hk</p>
+      <p>Table one is distribution of educational attainment of population aged 15 and over in 2014 while table two is information for 2015.</p>
+
     </div>
-
-
     <!-- SUB-HEAD AND BODYTEXT IN ENGLISH -->
-    <div class="subhead subhead-en">
-      <p>Quarterly bulletin<br/>of the Hochschule für Gestaltung, Ulm<br/>October 1958</p>
-      <p>Price per issue 2s 6d / $0.50<br/>Yearly subscription 10s / $2.00 post paid</p>
-    </div>
+  
+     
+
     <div class="bodytext bodytext-en">
       <p>The Hochschule für Gestaltung educates specialists for two different tasks of our technical civilization: The design of industrial products (industrial design department and building department); The design of visual and verbal means of communication
         (visual communication department and information department).</p>
@@ -173,8 +211,6 @@
       <p>The Hochschule für Gestaltung is conceived as a school for maximum number of 150 students, in order to ensure a favourable proportion between the number of students and faculty. Faculty and students come from many different countries, thus giving
         the school an international character.</p>
     </div>
-
-
     <!-- SUB-HEAD AND BODYTEXT IN FRENCH -->
     <div class="subhead subhead-fr">
       <p>Bulletin trimestriel<br/>de la Hochschule für Gestaltung, Ulm<br/>Octobre 1958</p>
@@ -190,5 +226,4 @@
     </div>
   </div>
 </body>
-
 </body></html>
